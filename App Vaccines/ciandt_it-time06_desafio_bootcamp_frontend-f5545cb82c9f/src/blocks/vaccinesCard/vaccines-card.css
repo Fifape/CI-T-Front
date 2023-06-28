@@ -1,0 +1,51 @@
+.vaccines-card {
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+.vaccines-card .container {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vaccines-card .container .card-left .name,
+.vaccines-card .container .card-left .campaign {
+    padding-bottom: 10px;
+}
+
+
+.vaccines-card .container .card-rigth svg {
+    color: var(--title-color);
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px) {
+    .vaccines-card .container {
+        justify-content: unset;
+        font-size: 12px;
+    }
+
+    .vaccines-card .container .card-left {
+        display: flex;
+        flex: 1;
+    }
+
+    .vaccines-card .container .card-left .campaign {
+        width: 33.5%;
+    }
+
+    .vaccines-card .container .card-left .name {
+        width: 50%;
+    }
+
+    .vaccines-card .container .card-rigth .icon {
+        margin-right: 50px;
+        width: 125px;
+    }
+}

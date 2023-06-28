@@ -1,0 +1,72 @@
+.campaign-card{
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+.campaign-card .container{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campaign-card .container .card-left .name , 
+.campaign-card .container .card-left .status{
+    padding-bottom: 10px;
+}
+
+
+.campaign-card .container .card-left .dates-mobile .start-date{
+    padding-right: 10px;
+}
+
+
+.campaign-card .container .card-rigth svg{
+   color: var(--title-color);
+   font-size: 25px;
+}
+
+/* ===== Querys for Mobile ===== */
+@media only screen and (max-width: 1000px){
+    .campaign-card .container .card-left .start-date-desk,
+    .campaign-card .container .card-left .end-date-desk
+    {
+        display:none;
+    }
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px){
+    .campaign-card .container{
+        justify-content:unset;
+        font-size: 12px;
+    }
+
+    .campaign-card .container .card-left .dates-mobile{
+        display: none;
+    }
+
+    .campaign-card .container .card-left{
+        display: flex;
+        flex: 4;
+    }
+
+    .campaign-card .container .card-left .name{
+        width: 378px;
+    }
+
+    .campaign-card .container .card-left .status{
+        width: 275px;
+    }
+
+    .campaign-card .container .card-left .start-date-desk{
+        width: 19.3%;
+    }
+
+    .campaign-card .container .card-left .end-date-desk{
+        width: 19.3%;
+        margin-right: -20px;
+    }
+    
+}

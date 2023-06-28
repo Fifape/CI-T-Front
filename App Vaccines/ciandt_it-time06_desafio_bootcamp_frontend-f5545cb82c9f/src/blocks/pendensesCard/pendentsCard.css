@@ -1,0 +1,86 @@
+.pendents-card {
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+.popup-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.pendents-card .container {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pendents-card .container .card-left .name,
+.pendents-card .container .card-left .requester {
+    padding-bottom: 15px;
+}
+
+.pendents-card .container .card-middle .receiver{
+    margin-top: 10px;
+}
+
+
+.pendents-card .container .card-rigth svg {
+    color: var(--title-color);
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* ===== Query's for Mobile ===== */
+@media only screen and (max-width: 1000px) {
+    .pendents-card .container .transfer-status{
+        display: none;
+    }
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px) {
+    .pendents-card .container {
+        justify-content: unset;
+        font-size: 12px;
+    }
+
+    .pendents-card .container .card-left {
+        display: flex;
+        width: 44%;
+    }
+
+    .pendents-card .container .card-left .name {
+        width: 52%;
+        padding-bottom: 0;
+    }
+
+    .pendents-card .container .card-left .requester {
+        width: 48%;
+        padding-bottom: 0;
+    }
+
+    .pendents-card .container .card-middle{
+        width: 19%;
+        margin-left: -10px;
+    }
+    .pendents-card .container .card-middle .receiver{
+        margin-top: 0;
+    }
+
+    .pendents-card .container .transfer-status{
+        width: 23%;
+    }
+
+    .pendents-card .container .card-rigth .icons{
+        display: flex;
+    }
+
+    .pendents-card .container .card-rigth .icon {
+        margin-right: 50px;
+        width: 15%;
+    }
+}

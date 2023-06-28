@@ -1,0 +1,261 @@
+/* ===== Navbar Mobile ===== */
+.navigation .navbar {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-navbar);
+    
+}
+
+.navigation .navbar .faBars{
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    color: var(--icon-color);
+    top: 12px;
+}
+
+.navigation .navbar .logo{
+    cursor: pointer;
+}
+
+/* ===== Navbar container ===== */
+.navigation .menu{
+    position: absolute;
+    width: 98.5%;
+    height: 91vh;
+    left: 7px;
+}
+
+.navigation .menu .menu-links{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-navbar-conteiner);
+    height: 80%;
+}
+
+.navigation .menu .menu-links a{
+    text-decoration: none;
+    color: var(--navbar-conteiner-text-color);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 0 0 10px;
+}
+
+.navigation .menu .menu-options{
+    background-color: var(--bg-navbar);
+}
+
+.navigation .menu .menu-options button{
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin: 10px 4% 10px 4%;
+    background-color: var(--bg-navbar-button);
+    font-weight: 400;
+    font-size: 14px;
+    color: var( --navbar-btn-text-color);
+}
+
+.navigation .menu .menu-options button .plus-icon{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.navigation .menu footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-navbar-conteiner);
+}
+
+.navigation .menu footer .icon svg{
+    margin: 20px 0 0 15px;
+    font-size: 20px;
+    color: red;
+}
+
+.navigation .menu footer .user-info{
+    display: flex;
+}
+
+.navigation .menu footer .user-info .user-details p{
+    margin: 5px 0 5px 0;
+}
+
+.navigation .menu footer .user-info .user-avatar{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+/* ===== Querys for Mobile ===== */
+@media only screen and (max-width: 1000px){
+    .navigation .navbar .top-navbar .left-content .menu-links{
+        display: none;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content{
+        display: none;
+    }
+
+    .navigation .navbar .bottom-navbar{
+        display: none;
+    }
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px){
+    /* ===== Navbar transitition =====*/
+    .navigation .navbar{
+        display: block;
+        height: 72px;
+    }
+
+    .navigation .navbar .faBars{
+        display: none;
+    }
+
+    /* ===== Top navbar ===== */
+    .navigation .navbar .top-navbar{
+        display: flex;
+        justify-content: space-between;
+       padding-top: 10px;
+    }
+
+    /* ===== Left content ===== */
+    .navigation .navbar .top-navbar .left-content{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .navigation .navbar .top-navbar .left-content .logo{
+        margin-right: 10px;
+    }
+
+    .navigation .navbar .top-navbar .left-content .menu-links a{
+        text-decoration: none;
+        color: var(--content-text-color);
+        font-weight: 400;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    /* ===== Rigth content ===== */
+    .navigation .navbar .top-navbar .rigth-content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content .menu-options{
+        display: flex;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content .menu-options button{
+        width: 200px;
+        border-radius: 20px;
+        border: none;
+        margin-right: 10px;
+        background-color: var(--bg-navbar-button);
+        font-weight: 400;
+        font-size: 14px;
+        color: var( --navbar-btn-text-color);
+        padding: 15px;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content .user-info {
+        display: flex;
+        color: var(--content-text-color);
+        align-items: center;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content .user-info .user-avatar{
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: cover;
+        margin: 0 40px 0 10px;
+        border-radius: 50%;
+    }
+
+    .navigation .navbar .top-navbar .rigth-content .icon svg{
+        margin: 20px 0 0 15px;
+        font-size: 20px;
+        color: var(--icon-color);
+        position: absolute;
+        right: 5px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    /* ===== Bottom Navbar ===== */
+    .navigation .navbar .bottom-navbar{
+        display: flex;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .navigation .navbar .bottom-navbar .left-content{
+        background-color: var(--bg-navbar);
+        padding-right: 100px;
+    }
+
+    .navigation .navbar .bottom-navbar .left-content h2{
+        color: var(--content-text-color);
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .navigation .navbar .bottom-navbar .square{
+        width: 40px;
+        height: 40px;
+        background-color: #ccc;
+        position: relative;
+    }
+
+    .navigation .navbar .bottom-navbar .square::before,
+    .navigation .navbar .bottom-navbar .square::after{
+        content: "";
+        position: absolute;
+        top: 0;
+    }
+
+    .navigation .navbar .bottom-navbar .square::before{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 40px 40px 0;
+        background-color: var(--bg-navbar);
+        border-color: transparent;
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+
+    .navigation .navbar .bottom-navbar .square::after{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        background-color: var(--bg-navbar-conteiner);
+        border-width: 40px 40px 0 0;
+        border-color: transparent;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+
+    .navigation .navbar .bottom-navbar .rigth-content{
+        background-color: var(--bg-navbar-conteiner);
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navigation .navbar .bottom-navbar .rigth-content .filter{
+        margin: 0 10px 0 10px;
+    }
+}

@@ -1,0 +1,112 @@
+.box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.box .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: #20BEC6;
+
+}
+
+.box .left-box h3 {
+    cursor: pointer;
+    bottom: 50px;
+    color: #F2F0F0;
+}
+.box .hole form {
+    height: 620px;
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.box .right-box {
+    display: flex;
+    justify-content: center;
+    contain: content;
+    border-radius: 0 5px 0 5px;
+    width: 100%;
+    background-color: #F2F0F0;
+}
+.box .right-box h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.box .right-box input {
+   height: 30px;
+}
+.box .right-box form .error-message {
+    font-size: 12px;
+}
+.box .right-box button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--bg-navbar);
+    color: #F2F0F0;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Dropdown-control {
+    display: flex;
+}
+.iconArrow {
+    font-size: 13px;
+    color: #91A5BE;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+}
+
+.iconArrowOpen {
+    transform: rotate(90deg);
+}
+
+/* ===== Querys for Mobile ===== */
+@media only screen and (max-width: 1000px) {
+    .box {
+        width: 100%;
+
+    }
+    .box .hole form {
+        height: 600px;
+        width: 320px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+    }
+
+    .box .left-box {
+        height: 100vh;
+        width: 100vh;
+    }
+    .box .right-box form .error-message {
+        font-size: 10px;
+    }
+}

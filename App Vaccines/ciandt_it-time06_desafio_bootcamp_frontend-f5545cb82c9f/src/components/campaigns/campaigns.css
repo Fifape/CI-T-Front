@@ -1,0 +1,87 @@
+/* ===== Mobile Header =====*/
+.campaigns .container .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--title-color);
+    margin: 10px 10px 30px 10px;
+}
+
+.campaigns .container .header svg{
+    font-size: 20px;
+}
+
+/* ===== Mobile Campaigns =====*/
+.campaigns .container section{
+    margin: 20px 10px 10px 10px;
+}
+
+.campaigns .container .sub-title{
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+
+/* ===== Desk Campaigns ===== */
+.campaigns .container .campaigns-info-bar{
+    display: flex;
+    background-color: var(--bg-content);
+    color: var(--content-text-color);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.campaigns .container .campaigns-info-bar .information-type p{
+    font-weight: 700;
+}
+
+/* ===== Querys for mobile ===== */
+@media only screen and (max-width: 1000px){
+    .campaigns .container .campaigns-info-bar{
+        display:none;
+    }
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px){
+    .campaigns .container .header svg{
+        display: none;
+    }
+
+    .campaigns .container{
+        padding-top: 40px;
+    }
+
+    .campaigns .container .header{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+
+    .campaigns .container .active-campaigns,
+    .campaigns .container .inactive-campaigns
+    {
+        width: 80%;
+        margin: 20px auto 10px auto;
+    }
+
+    .campaigns .campaigns-info-bar .information-type-campaign{
+        width: 370px;
+    }
+
+    .campaigns .campaigns-info-bar .information-type-status{
+        width: 265px;
+    }
+
+    .campaigns .campaigns-info-bar .information-type-start-date{
+        width: 20%;
+    }
+
+    .campaigns .campaigns-info-bar .information-type-end-date{
+        width: 20%;
+    }
+}

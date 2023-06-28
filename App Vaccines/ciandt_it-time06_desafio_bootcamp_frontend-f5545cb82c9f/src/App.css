@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+:root{
+  --bg-color: #E5E5E5;
+  --bg-card: #FFFFFF;
+  --bg-content: #20BEC6;
+  --bg-navbar: #20BEC6;
+  --bg-navbar-conteiner: #FFFFFF;
+  --bg-navbar-button: #FFFFFF;
+  --title-color: #20BEC6;
+  --content-text-color: #FFFFFF;
+  --navbar-conteiner-text-color: #444444;
+  --navbar-conteiner-text-color-active: #20BEC6;
+  --navbar-btn-text-color: #20BEC6;
+  --icon-color: #FFFFFF;
+  --blue-line: #20BEC6;
+  --bg-button: #42d6dc;
+  --text-color-main: #fff;
+  --text-color-secundary: #101010;
+  --text-color-tertiary: rgb(146, 146, 157);
+  --circular-bar: rgba(19, 19, 26);
+  --circular-progress-bar: #fff;
+  --loading-bar: #222f46;
+  --laoding-progress-bar: rgba(30, 117, 255);
+  --orange-popup: #F2B838;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.App {
+  height: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+.empty-warning{
+  display: flex;
+  width: 100%;
+  background-color: var(--bg-card);
+  margin-top: 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}

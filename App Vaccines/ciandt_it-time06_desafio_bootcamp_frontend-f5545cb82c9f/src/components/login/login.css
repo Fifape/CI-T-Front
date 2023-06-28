@@ -1,0 +1,180 @@
+
+.hole {
+    display: flex;
+    justify-content: center;
+}
+
+.hole .logo {
+    position: absolute;
+    top: 50px;
+}
+
+.hole .background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.hole .background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hole .background .shape:first-child {
+    background: linear-gradient(
+            var(--bg-navbar),
+            #b6e7ec
+    );
+    left: -80px;
+    top: -80px;
+}
+
+.hole .background .shape:last-child {
+    background: linear-gradient(
+            to right,
+            #ecad50,
+            #F2B838
+    );
+    right: -80px;
+    bottom: -80px;
+}
+
+.hole form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.hole form * {
+    font-family: 'Poppins', sans-serif;
+    color: var(--bg-navbar);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.hole form h3 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+}
+
+.hole form label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hole form input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hole form ::placeholder {
+    color: #363636;
+}
+
+.hole form button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--bg-navbar);
+    color: #F2F0F0;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hole form .error-message {
+    display: contents;
+    color: red;
+    width: 80%;
+}
+.hole form .create {
+    padding-top: 10px;
+    cursor: pointer;
+}
+.hole form .input-error {
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+}
+@media only screen and (max-width: 1000px) {
+
+
+    .hole form {
+        height: 460px;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.13);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+    }
+    .hole .background .shape {
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .hole .background .shape:first-child {
+        background: linear-gradient(
+                var(--bg-navbar),
+                #b6e7ec
+        );
+        left: -30px;
+        top: -70px;
+    }
+
+    .hole .background .shape:last-child {
+        background: linear-gradient(
+                to right,
+                #ecad50,
+                #F2B838
+        );
+        right: -30px;
+        bottom: -60px;
+    }
+
+}
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+

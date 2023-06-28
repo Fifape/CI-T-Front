@@ -1,0 +1,154 @@
+/* ===== Mobile Header =====*/
+.vaccines .container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--title-color);
+    margin: 10px 10px 30px 10px;
+}
+
+.vaccines .container .header svg {
+    font-size: 20px;
+}
+
+/* ===== Mobile Vaccines =====*/
+.vaccines .container section {
+    margin: 20px 10px 10px 10px;
+}
+
+.vaccines .container .sub-title {
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+
+/* ===== Desk Vaccines ===== */
+.vaccines .container .vaccines-info-bar,
+.vaccines .container .pendent-info-bar {
+    display: flex;
+    background-color: var(--bg-content);
+    color: var(--content-text-color);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-campaign {
+    width: 50%;
+}
+
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-name {
+    width: 100%;
+}
+
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-actions {
+    width: 300px;
+}
+
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-campaign p,
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-name p,
+.vaccines .container .vaccines-list .vaccines-info-bar .information-type-actions p,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-campaign p,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-requester p,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-receiver p,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-status p,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-actions p {
+    font-weight: 700;
+}
+
+.vaccines .container .pendent-list .pendent-info-bar .information-type-campaign {
+    width: 23%;
+}
+
+.vaccines .container .pendent-list .pendent-info-bar .information-type-requester,
+.vaccines .container .pendent-list .pendent-info-bar .information-type-receiver {
+    width: 20%;
+}
+
+.vaccines .container .pendent-list .pendent-info-bar .information-type-status {
+    width: 23%;
+}
+
+.vaccines .container .pendent-list .pendent-info-bar .information-type-actions {
+    width: 15%;
+}
+
+.vaccines .container .vaccines-list .box-request-vaccine {
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vaccines .container .vaccines-list .box-request-vaccine .request-vaccine {
+    width: 20%;
+    height: 100%;
+    background-color: var(--orange-popup);
+    color: var(--bg-card);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ===== Querys for mobile ===== */
+@media only screen and (max-width: 1000px) {
+    .vaccines .container .vaccines-info-bar,
+    .vaccines .container .pendent-info-bar {
+        display: none;
+    }
+
+
+}
+
+/* ===== Querys for Desk ===== */
+@media only screen and (min-width: 1000px) {
+    .vaccines .container .header svg {
+        display: none;
+    }
+
+    .vaccines .container {
+        padding-top: 40px;
+    }
+
+    .vaccines .container .header {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+
+    .vaccines .container .vaccines-info-bar,
+    .vaccines .container .pendent-info-bar {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .vaccines .container .vaccines-list,
+    .vaccines .container .pendent-list {
+        width: 80%;
+        margin: 20px auto 10px auto;
+    }
+}
+.vaccines .container .vaccines-list .box-request-vaccine {
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vaccines .container .vaccines-list .box-request-vaccine .request-vaccine {
+    width: 15%;
+    height: 100%;
+    background-color: var(--orange-popup);
+    color: var(--bg-card);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
